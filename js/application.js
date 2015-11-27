@@ -1,4 +1,4 @@
 window.Todos = Ember.Application.create();
 
-// Use fixture adapter (browser memory cache)
+// Use fixture adapter
 Todos.ApplicationAdapter = DS.FixtureAdapter.extend();
