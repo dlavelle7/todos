@@ -7,6 +7,7 @@ Todos.TodoController = Ember.ObjectController.extend({
       this.set('isEditing', false);
   
       if (Ember.isEmpty(this.get('model.title'))) {
+        // see https://github.com/tastejs/todomvc/blob/gh-pages/examples/emberjs/js/controllers/todo_controller.js
         this.send('removeTodo');
       }
       else {
@@ -27,7 +28,8 @@ Todos.TodoController = Ember.ObjectController.extend({
     if (value === undefined) {
       // property being used as a getter
       return model.get('isCompleted');
-    } else {
+    }
+    else {
       // property being used as a setter
       model.set('isCompleted', value);
       model.save();
