@@ -4,6 +4,7 @@ Todos.Todo = DS.Model.extend({
 });
 
 // Sample fixture data
+/*
 Todos.Todo.FIXTURES = [
  {
    id: 1,
@@ -21,3 +22,4 @@ Todos.Todo.FIXTURES = [
    isCompleted: false
  }
 ];
+*/

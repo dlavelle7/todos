@@ -8,7 +8,8 @@ Todos.TodoController = Ember.ObjectController.extend({
   
       if (Ember.isEmpty(this.get('model.title'))) {
         this.send('removeTodo');
-      } else {
+      }
+      else {
         this.get('model').save();
       }
     },

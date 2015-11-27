@@ -1,4 +1,9 @@
 window.Todos = Ember.Application.create();
 
-// Use fixture adapter
-Todos.ApplicationAdapter = DS.FixtureAdapter.extend();
+// Local storage adapter (browser)
+Todos.ApplicationAdapter = DS.LSAdapter.extend({
+  namespace: 'todos-emberjs'
+});
+
+// Fixture adapter (hard coded)
+//Todos.ApplicationAdapter = DS.FixtureAdapter.extend();
