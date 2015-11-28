@@ -7,7 +7,6 @@ Todos.TodoController = Ember.ObjectController.extend({
       this.set('isEditing', false);
   
       if (Ember.isEmpty(this.get('model.title'))) {
-        // see https://github.com/tastejs/todomvc/blob/gh-pages/examples/emberjs/js/controllers/todo_controller.js
         this.send('removeTodo');
       }
       else {
